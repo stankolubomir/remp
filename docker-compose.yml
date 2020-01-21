@@ -276,18 +276,16 @@ services:
     restart: "unless-stopped"
 
 volumes:
-  kafka-data-old:
-    driver: "local"
   mysql-data:
-    driver: "local"
-  redis-data:
-    driver: "local"
-  elastic-data:
     driver: "local"
   zookeeper_data:
     driver: local
   kafka_data:
     driver: local
+  redis-data:
+    driver: "local"
+  elastic-data:
+    driver: "local"
 
 networks:
   default:
